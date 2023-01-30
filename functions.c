@@ -18,7 +18,7 @@ int print_char(va_list types, char buffer[],
 {
 	char c = va_arg(types, int);
 
-	return (handle_write_char(c, buffer, flags, width, precision,size));
+	return (handle_write_char(c, buffer, flags, width, precision, size));
 }
 
 /*print string*/
@@ -189,6 +189,7 @@ int print_binary(va_list types, char buffer[],
 		if (sum || i == 31)
 		{
 			char z = '0' + a[i];
+
 			write(1, &z, 1);
 			count++;
 		}
