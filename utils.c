@@ -24,10 +24,11 @@ int is_printable(char c)
 
 int append_hexa_code(char ascii_code, char buffer[], int i)
 {
-	char map_to[] = "0123456789ABCDEF";	/* The hexa format code is always 2 digits long */
+	/* The hexa format code is always 2 digits long */
+	char map_to[] = "0123456789ABCDEF";
+
 	if (ascii_code < 0)
 		ascii_code *= -1;
-
 	buffer[i++] = '\\';
 	buffer[i++] = 'x';
 
@@ -64,7 +65,7 @@ long int convert_size_number(long int num, int size)
 		return (num);
 	else if (size == S_SHORT)
 		return ((short)num);
-	
+
 	return ((int)num);
 }
 
