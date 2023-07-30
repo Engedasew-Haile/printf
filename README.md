@@ -177,6 +177,4 @@ In general, this project allow us to learn how printf() function actually works 
 
 ***
 ### contributors
-<a href="https://github.com/MelakuDemeke/printf/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=MelakuDemeke/printf" />
-</a>
+	Engedasew Haile
